@@ -98,7 +98,7 @@ alias where='whereis'
 alias aptshow='sudo apt-cache show'
 alias ubuntu_ver='lsb_release -a' 
 alias dpkgshow='dpkg -l | grep'
-alias xterm='xrdb ~/.Xresources | xterm&' 
+alias xterm='xrdb ~/.Xresources; xterm&' 
 alias rm='trash-put'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
