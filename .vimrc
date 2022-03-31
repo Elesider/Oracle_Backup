@@ -170,18 +170,21 @@ set encoding=utf-8
 "set termencoding=utf-8
 
 "In case of future lead key for future extension.
-let mapleader=" "
-map <leader>n :noh<CR>
-map <leader>s :w<CR>: source % <CR>
-map <leader>b :shell <CR>
+let mapleader=","
+noremap <leader>n :noh<CR>
+nnoremap<leader>s :w<CR>: source % <CR>
+nnoremap <leader>b :shell <CR>
 vnoremap <silent><Leader>y "yy <Bar> :call system('xclip', @y)<CR><CR>
-"Two command together if use bash should be add !.
+noremap <Leader>y "yy <Bar> :call system('xclip', @y)<CR><CR>
+noremap <Leader>y "*y
+noremap <Leader>Y "+Y
+
+"Two commandtogether if use bash should be add !.
 "
 
 " Help vertical setup Window in VIM
 autocmd FileType help wincmd H|exe 10. "wincmd <"
 " autocmd FileType help exe 1. "wincmd <"
-
 
 " For call extern compiler for the files
 " 1. VIM Registers
@@ -191,11 +194,25 @@ autocmd FileType help wincmd H|exe 10. "wincmd <"
 " Debug the special ch"%:p:h") This is to cut the current highlighted line.
 "vmap <F7> :w !xclip -selection clipboard<CR><CR>
 " The ! is to run bash command.ctrl+shift+v is the paste.
-vnoremap <C-C> :w ! xclip -i -sel <CR><CR>
+"vnoremap <C-C> :w ! xclip -i -sel <CR><CR>
 " vnoremap <C-v> :w !xclip -o -sel c<CR><CR>
 "set clipboard=unnamed
 "set the foregroundht group is how Vow Vim setht group is how Vim sdd
 "ht group is how Vim setht group is how Vim setht group is how Vim s:hve foreground (vtereadability i try 
 "vnoremap <C-C>  "yy<bar>w !xclip -i -sel clipboard<CR><CR>
 "vnoremap <silent><Leader>y "yy <Bar> :call system('xclip -xclipboard:w', @y)<CR>
-"set clipboard=unnamedplus
+"There are two clipboard."* and "+. If we choose unmaned, then we only use      this is the problem                                                                
+"one. Two register value are the same value if choose clip to be unnamed. 
+set clipboard=unnamed
+
+
+"Interactive with the bash terminal
+
+"Help: :h terminal  :h key_notation  | leader 
+
+"1.Open the vertial split to terminal i
+noremap<leader>v :vert rightb term <CR>
+"2. Reset the termoinkey CTRL-W is used for delete in the terminal. It is has
+"issues.
+"set termwinkey=<C-L>
+
