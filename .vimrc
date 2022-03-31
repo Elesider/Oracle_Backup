@@ -60,7 +60,7 @@ inoremap <C-b> <Esc>bi
 inoremap <C-l> <Esc> wi
 " Tis for write and save
 nnoremap <C-q> :q <CR>
-inoremap <C-q> :wq <CR>
+inoremap <C-q> <Esc> :wq <CR>
 
 " The ! is to run bash command.ctrl+shift+v is the paste.
 "vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
@@ -208,7 +208,7 @@ set clipboard=unnamed
 
 "Interactive with the bash terminal
 
-"Help: :h terminal  :h key_notation  | leader 
+"Help: :h terminal  :h key-notation  | leader 
 
 "1.Open the vertial split to terminal i
 noremap<leader>v :vert rightb term <CR>
