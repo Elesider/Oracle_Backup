@@ -157,7 +157,7 @@ set cmdheight=1
 hi Pmenu ctermfg=0 ctermbg=7
 hi PmenuSel ctermfg=7 ctermbg=4
 
-"Key Mapping for ctrl z instead of u: 
+"key mapping for ctrl z instead of u: 
 
 " Turn paste mode on/off using <F10> then use shift+insert key to paste in
 " vim.This is replaced by directly use ctrl+shift+v
@@ -174,7 +174,7 @@ let mapleader=" "
 map <leader>n :noh<CR>
 map <leader>s :w<CR>: source % <CR>
 map <leader>b :shell <CR>
-vnoremap <silent><Leader>y "yy <Bar> :call system('xclip', @y)<CR>
+vnoremap <silent><Leader>y "yy <Bar> :call system('xclip', @y)<CR><CR>
 "Two command together if use bash should be add !.
 "
 
@@ -191,9 +191,11 @@ autocmd FileType help wincmd H|exe 10. "wincmd <"
 " Debug the special ch"%:p:h") This is to cut the current highlighted line.
 "vmap <F7> :w !xclip -selection clipboard<CR><CR>
 " The ! is to run bash command.ctrl+shift+v is the paste.
-"vnoremap <C-C> :w ! xclip -i -sel clipbord<CR><CR>
+vnoremap <C-C> :w ! xclip -i -sel <CR><CR>
 " vnoremap <C-v> :w !xclip -o -sel c<CR><CR>
 "set clipboard=unnamed
-
 "set the foregroundht group is how Vow Vim setht group is how Vim sdd
 "ht group is how Vim setht group is how Vim setht group is how Vim s:hve foreground (vtereadability i try 
+"vnoremap <C-C>  "yy<bar>w !xclip -i -sel clipboard<CR><CR>
+"vnoremap <silent><Leader>y "yy <Bar> :call system('xclip -xclipboard:w', @y)<CR>
+"set clipboard=unnamedplus

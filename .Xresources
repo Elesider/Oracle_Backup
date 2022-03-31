@@ -3,11 +3,9 @@
 ! Font setup
 xterm*faceName:Monospace
 xterm*faceSize:13
-xterm*SaveLine:2000
-
-!Front ground/background COLOR
-xterm*background:#2B1520
-xterm*foreground:#FFFFFF
+xterm*SaveLine:5000
+xterm*foreground: rgb:FF/FF/FF
+xterm*background: rgb:22/22/22
 
 !Scroll bar BorderWidth
 xterm*scrollBar: True
@@ -42,22 +40,15 @@ XTerm.vt100.backarrowKey: false
 XTerm.ttyModes: erase ^?
 ! add keyboard shortcut to the beginning diff   
 
-!xterm*vt100.translation:#override \n\
-
 ! This is a link for general shortcut on the xterm terminal navigation and delete https://www.bigsmoke.us/readline/shortcuts
 
 
 !2. Adding more to the more system colors and fonts
-xterm*faceName: DejaVu Sans Mono
-!xterm*faceSize: 13
-!Double-click to select whole URLs :D
+!vDouble-click to select whole URLs :D
 xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 !! Chinese fonts not installed so far.
 !XTerm*faceNameDoublesize: AR PL UMING HK 
 !Colors
-xterm*foreground: rgb:a8/a8/a8
-xterm*foreground: rgb:FF/FF/FF
-xterm*background: rgb:22/22/22
 xterm*color0: rgb:00/00/00
 xterm*color1: rgb:a8/00/00
 xterm*color2: rgb:00/a8/00
