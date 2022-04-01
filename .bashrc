@@ -100,6 +100,7 @@ alias ubuntu_ver='lsb_release -a'
 alias dpkgshow='dpkg -l | grep'
 alias xterm='xrdb ~/.Xresources; xterm&' 
 alias rm='trash-put'
+alias n='nnn'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -159,3 +160,14 @@ export NNN_COLORS='2136'
 ## Copy and poste in the bashterminal is   shift+insert(fn+ins in acer laptop)
 ## Copy and paste is set to ctrl+shift+v and ctrol+shift+c in the xterm. 
 
+
+
+
+# Extra key binding Setup
+
+# key notation https://stackoverflow.com/questions/4200800/in-bash-how-do-i-bind-a-function-key-to-a-command 
+# Key noatation https://unix.stackexchange.com/questions/76566/where-do-i-find-a-list-of-terminal-key-codes-to-remap-shortcuts-in-bash
+# Gramar : https://www.computerhope.com/unix/bash/bind.htm
+
+# 1. Exit the terminal using ctrl+q.
+bind -x '"\C-q":exit '  
