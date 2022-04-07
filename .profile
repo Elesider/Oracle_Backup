@@ -4,7 +4,7 @@
 # see /usr/share/doc/bash/examples/startup-files for examples.
 # the files are located in the bash-doc package.
 
-# the default umask is set in /etc/profile; for setting the umask
+# the default umask  for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
@@ -29,6 +29,9 @@ fi
 
 
 # Set up for nnn
+
+# Check the nnn wiki:https://github.com/jarun/nnn/wiki/Usage#installation
+
 # 1. Book Mark
 export NNN_BMS='h:~;t:~/IC_Tools;n:~/Note;s:/;g:~/Note/git'
 export NNN_COLORS='2367'

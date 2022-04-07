@@ -216,3 +216,21 @@ noremap<leader>v :vert rightb term <CR>
 "issues.
 "set termwinkey=<C-L>
 
+
+"Copy and Paste <http://www.foreverlarz.com/copy-paste-vim-in-putty-on-windows/#:~:text=To%20paste%20something%20from%20Windows,and%20select%20with%20Left%20Mouse%20> 
+
+"1. If copy from the putty vim to bash shell we will direct copy it to any
+"register through such as  
+"a. vitual mode + "yy : put is to yank it the y register.
+"b. use ctrl+w key then us "yp : past the y register to the bashshell
+"c. copy paste  from the terminal to the vim can directly use ctrl+v and ctrl
+"+ p through the system clipboard.
+"
+"
+"2. Copy from the server to the remote windows can only use the 
+" a. Copy from the windows to server vim  directly use the ctrl+c and v.
+" b. Copy from the vim to windows is very trick. Not allowewd to use system
+" clipboard. You can try it. It will not work reliably. And it is recommended
+" by the vim. The correct method is c.
+" C. Hold shift and use mouse select the context to copy(avoid entering the
+" visual mode). Then ctrl c. Go to windows and directly use cntrl +v.
