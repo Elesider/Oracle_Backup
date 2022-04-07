@@ -233,4 +233,4 @@ noremap<leader>v :vert rightb term <CR>
 " clipboard. You can try it. It will not work reliably. And it is recommended
 " by the vim. The correct method is c.
 " C. Hold shift and use mouse select the context to copy(avoid entering the
-" visual mode). Then ctrl c. Go to windows and directly use cntrl +v.
+" visual mode). Then ctrl(shift)- c. Go to windows and directly use cntrl +v.
