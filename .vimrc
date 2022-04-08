@@ -207,11 +207,10 @@ set clipboard=unnamed
 
 
 "Interactive with the bash terminal
-
 "Help: :h terminal  :h key-notation  | leader 
 
 "1.Open the vertial split to terminal i
-noremap<leader>v :vert rightb term <CR>
+noremap<leader>v :vert rightb term ++cols=85 <CR>
 "2. Reset the termoinkey CTRL-W is used for delete in the terminal. It is has
 "issues.
 "set termwinkey=<C-L>
