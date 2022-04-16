@@ -7,3 +7,5 @@ ssh-add -k  ~/.ssh/oracle_setup
  echo "Input niz1 computer password"
 ssh -T git@github.com
 
+giantenormouscanada@gmail.com
+
