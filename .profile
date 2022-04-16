@@ -36,5 +36,5 @@ fi
 export NNN_BMS='h:~;t:~/IC_Tools;n:~/Note;s:/;g:~/Note/git'
 export NNN_COLORS='2367'
 # 2. Configure assign keybinds to invote shortcuto
-export NNN_PLUG='t:!tmux -v $nnn'
+export NNN_PLUG='t:!tmux new-session nnn*'
 
