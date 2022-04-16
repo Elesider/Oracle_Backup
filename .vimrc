@@ -59,8 +59,9 @@ imap <C-d> <Esc>lcaw
 inoremap <C-b> <Esc>bi
 inoremap <C-l> <Esc> wi
 " Tis for write and save
-nnoremap <C-q> :q <CR>
+"map <C-q> :q <CR>
 inoremap <C-q> <Esc> :wq <CR>
+nnoremap <C-q> <Esc> :q <CR>
 
 " The ! is to run bash command.ctrl+shift+v is the paste.
 "vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
@@ -206,7 +207,7 @@ autocmd FileType help wincmd H|exe 10. "wincmd <"
 set clipboard=unnamed
 
 
-"Interactive with the bash terminal
+"Interactive with the bash terminal 
 "Help: :h terminal  :h key-notation  | leader 
 
 "1.Open the vertial split to terminal i
@@ -214,6 +215,9 @@ noremap<leader>v :vert rightb term ++cols=85 <CR>
 "2. Reset the termoinkey CTRL-W is used for delete in the terminal. It is has
 "issues.
 "set termwinkey=<C-L>
+"3. Change the terminal windows size. Ctrl+K to enable. Use ALT+ARROW key to
+"change the size.
+"4. Change the highlighted terminal use ALT + Arrow 
 
 
 "Copy and Paste <http://www.foreverlarz.com/copy-paste-vim-in-putty-on-windows/#:~:text=To%20paste%20something%20from%20Windows,and%20select%20with%20Left%20Mouse%20> 
