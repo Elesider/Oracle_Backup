@@ -7,7 +7,5 @@ ssh-add -k  ~/.ssh/oracle_setup
 # hold on it to avoid optimization
  sleep 5
 ssh -T git@github.com
-sleep 2
-ssh -T git@github.com
 
 
