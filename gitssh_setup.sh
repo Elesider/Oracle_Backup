@@ -8,4 +8,3 @@ ssh-add -k  ~/.ssh/oracle_setup
  sleep 5
 ssh -T git@github.com
 
-
