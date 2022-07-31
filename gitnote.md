@@ -22,3 +22,6 @@ git push -u origin master
 
 3. [If the Github has new committs while you are working locally](https://stackoverflow.com/questions/24114676/git-error-failed-to-push-some-refs-to-remote)
 > git pull --rebase
+
+4. Note 1
+> When run the .sh. You must use chmod +x to change the mode of the file. Or the code will not run smoothly.
