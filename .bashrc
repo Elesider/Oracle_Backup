@@ -102,6 +102,8 @@ alias xterm='xrdb ~/.Xresources; xterm&'
 alias rm='trash-put'
 alias tn='tmux new-session nnn \; split-window -h \; attach'
 alias tm='tmux new-session \; split-window -h \; split-window -v \; attach'
+alias sudovim='sudo -E vim'
+export TERM="xterm-256color"   # Requires this tmux can work with vim good. If not, vim will not run good.It is different from the normal terminal. 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -160,6 +162,7 @@ export NNN_COLORS='2136'
 
 ## Copy and poste in the bashterminal is   shift+insert(fn+ins in acer laptop)
 ## Copy and paste is set to ctrl+shift+v and ctrol+shift+c in the xterm. 
+## Copy and paste in vim is to use the mouse. Selection should press the shift key if not will enter the visual mode of vim. 
 
 
 
@@ -172,3 +175,7 @@ export NNN_COLORS='2136'
 
 # 1. Exit the terminal using ctrl+q.
 bind -x '"\C-q":exit '  
+
+
+
+
