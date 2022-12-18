@@ -1,8 +1,10 @@
 ! This is setting up xresource to make xterm looks better
+! This is only use when need to run the linux grahic tools.
 ! After setting up, please run command: xrdb -merge ~/.Xresources to integrate the setting.
 ! Font setup
-xterm*faceName:Monospace
-xterm*faceSize:13
+!xterm*faceName:Monospace
+xterm*faceName:DejaVuSansMono
+xterm*faceSize:12
 xterm*SaveLine:5000
 xterm*foreground: rgb:FF/FF/FF
 xterm*background: rgb:22/22/22

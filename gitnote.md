@@ -24,4 +24,5 @@ git push -u origin master
 > git pull --rebase
 
 4. Note 1
-> When run the .sh. You must use chmod +x to change the mode of the file. Or the code will not run smoothly.
+> When run the .sh. You must use chmod +x to change the mode of the file. Or the code will not run smoothly.  
+> Git status is to check status.
