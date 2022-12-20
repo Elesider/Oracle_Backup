@@ -174,8 +174,6 @@ export NNN_COLORS='2136'
 # Gramar : https://www.computerhope.com/unix/bash/bind.htm
 
 # 1. Exit the terminal using ctrl+q.
-bind -x '"\C-q":exit '  
-
-
-
-
+bind -x '"\C-q":exit '
+# 2. for fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
